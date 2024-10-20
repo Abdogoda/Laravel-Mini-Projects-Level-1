@@ -1,0 +1,553 @@
+{
+	"info": {
+		"_postman_id": "14fc27ed-10fc-4ee7-9743-4ab8779ab538",
+		"name": "Task",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "25835711"
+	},
+	"item": [
+		{
+			"name": "Auth",
+			"item": [
+				{
+					"name": "Register",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8000/api/register?name=test&phone=01085412684&password=aA*5sfda",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"register"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "test"
+								},
+								{
+									"key": "phone",
+									"value": "01085412684"
+								},
+								{
+									"key": "password",
+									"value": "aA*5sfda"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Verify",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8000/api/verify?phone=01585412680&verification_code=759370",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"verify"
+							],
+							"query": [
+								{
+									"key": "phone",
+									"value": "01585412680"
+								},
+								{
+									"key": "verification_code",
+									"value": "759370"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Login",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8000/api/login?phone=01585412680&password=aA*5sfda",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"login"
+							],
+							"query": [
+								{
+									"key": "phone",
+									"value": "01585412680"
+								},
+								{
+									"key": "password",
+									"value": "aA*5sfda"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "User",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "1|gKqBlXkswf7XKi7acWxxloTcCLGjDSmCmm23hzxDc0b76c47"
+							}
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": "http://localhost:8000/api/user"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Tag",
+			"item": [
+				{
+					"name": "Update",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "2|3GiLNwp3xkbZMTQgSKngOfNqIifu8jwJgxP26dd109de7ba5"
+							}
+						},
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8000/api/tags/5?name=electronics",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"tags",
+								"5"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "electronics"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "2|3GiLNwp3xkbZMTQgSKngOfNqIifu8jwJgxP26dd109de7ba5"
+							}
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": "http://localhost:8000/api/tags"
+					},
+					"response": []
+				},
+				{
+					"name": "Store",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "2|3GiLNwp3xkbZMTQgSKngOfNqIifu8jwJgxP26dd109de7ba5"
+							}
+						},
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8000/api/tags?name=Electronicssfdsa",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"tags"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "Electronicssfdsa"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "2|3GiLNwp3xkbZMTQgSKngOfNqIifu8jwJgxP26dd109de7ba5"
+							}
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": "http://localhost:8000/api/tags/2"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Post",
+			"item": [
+				{
+					"name": "Store",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "4|jBVsuKZu3l9SAKkR8gRLF2UD5tXliY9KaCzgzpIM43716322"
+							}
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "title",
+									"value": "test post",
+									"type": "text"
+								},
+								{
+									"key": "body",
+									"value": "test body",
+									"type": "text"
+								},
+								{
+									"key": "image",
+									"type": "file",
+									"src": "postman-cloud:///1ef6e71e-f290-4f20-90e7-72726ab5ec23"
+								},
+								{
+									"key": "pinned",
+									"value": "true",
+									"type": "text"
+								},
+								{
+									"key": "tags[]",
+									"value": "3",
+									"type": "text"
+								},
+								{
+									"key": "tags[]",
+									"value": "4",
+									"type": "text"
+								},
+								{
+									"key": "tags[]",
+									"value": "5",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/posts/?title=post title after update&body=post body after update&pinned=false",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"posts",
+								""
+							],
+							"query": [
+								{
+									"key": "title",
+									"value": "post title after update"
+								},
+								{
+									"key": "body",
+									"value": "post body after update"
+								},
+								{
+									"key": "pinned",
+									"value": "false"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get all",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "2|3GiLNwp3xkbZMTQgSKngOfNqIifu8jwJgxP26dd109de7ba5"
+							}
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": "http://localhost:8000/api/posts"
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "2|3GiLNwp3xkbZMTQgSKngOfNqIifu8jwJgxP26dd109de7ba5"
+							}
+						},
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "title",
+									"value": "test post",
+									"type": "text"
+								},
+								{
+									"key": "body",
+									"value": "test body",
+									"type": "text"
+								},
+								{
+									"key": "image",
+									"type": "file",
+									"src": "postman-cloud:///1ef6e71e-f290-4f20-90e7-72726ab5ec23",
+									"disabled": true
+								},
+								{
+									"key": "pinned",
+									"value": "true",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/posts/5?title=post title after update&body=post body after update&pinned=false&tags[]=5&tags[]=3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"posts",
+								"5"
+							],
+							"query": [
+								{
+									"key": "title",
+									"value": "post title after update"
+								},
+								{
+									"key": "body",
+									"value": "post body after update"
+								},
+								{
+									"key": "pinned",
+									"value": "false"
+								},
+								{
+									"key": "tags[]",
+									"value": "5"
+								},
+								{
+									"key": "tags[]",
+									"value": "3"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "2|3GiLNwp3xkbZMTQgSKngOfNqIifu8jwJgxP26dd109de7ba5"
+							}
+						},
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": "http://localhost:8000/api/posts/5"
+					},
+					"response": []
+				},
+				{
+					"name": "Get deleted",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "2|3GiLNwp3xkbZMTQgSKngOfNqIifu8jwJgxP26dd109de7ba5"
+							}
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": "http://localhost:8000/api/posts/deleted"
+					},
+					"response": []
+				},
+				{
+					"name": "Restore",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "2|3GiLNwp3xkbZMTQgSKngOfNqIifu8jwJgxP26dd109de7ba5"
+							}
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": "http://localhost:8000/api/posts/5/restore"
+					},
+					"response": []
+				},
+				{
+					"name": "Show",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "2|3GiLNwp3xkbZMTQgSKngOfNqIifu8jwJgxP26dd109de7ba5"
+							}
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": "http://localhost:8000/api/posts/5"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Stats",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": "http://localhost:8000/api/stats"
+			},
+			"response": []
+		}
+	]
+}
