@@ -4,43 +4,43 @@
 This repository contains a collection of **10 beginner-level Laravel projects** designed to help junior developers master foundational Laravel concepts. These projects cover topics such as CRUD operations, authentication, role-based access control, API development, and more. The projects are suitable for those who have a basic understanding of PHP and Laravel and are looking to improve their skills through hands-on learning.
 
 ## 🚀 Projects Included
-1. **01 Tasks CRUD with Soft Deletes**:
+**01 Tasks CRUD with Soft Deletes**:
    - Demonstrates CRUD operations for tasks.
    - Includes **soft deletes** and **pagination**.
    
-2. **02 Simple User Authentication**:
+**02 Simple User Authentication**:
    - Implements basic **login**, **register**, and **logout** functionality.
    - Includes validation and error handling for forms.
 
-3. **03 Post CRUD with Authentication**:
+**03 Post CRUD with Authentication**:
    - Combines CRUD operations on posts with **user authentication**.
    - Uses **authorization** to limit actions to the post owner.
 
-4. **04 Multi-Auth with File Upload**:
+**04 Multi-Auth with File Upload**:
    - Demonstrates multiple user roles (Admin, User) with **different access levels**.
    - Implements file upload functionality.
 
-5. **05 Product Management with Pagination and Filters**:
+**05 Product Management with Pagination and Filters**:
    - Implements a RESTful API with **pagination**, **search**, **filtering**, and **sorting** for products.
    - Uses **Laravel Seeder** to generate a large dataset for testing.
 
-6. **06 Profile Management with Password Reset**:
+**06 Profile Management with Password Reset**:
    - Allows users to update profile information.
    - Implements custom password reset logic without using Laravel’s built-in reset function.
 
-7. **07 RESTful API with Role-Permission Based Authentication**:
+**07 RESTful API with Role-Permission Based Authentication**:
    - Provides a full **REST API** for managing resources.
    - Implements **role-permission-based** authentication using Laravel Sanctum.
 
-8. **08 Multilingual API CRUD for Articles**:
+**08 Multilingual API CRUD for Articles**:
    - Supports article creation and retrieval in multiple languages.
    - Includes dynamic validation and **middleware** for setting the locale.
 
-9. **09 Role-Permission Based System with Authentication**:
+**09 Role-Permission Based System with Authentication**:
    - Demonstrates a full **role-permission** system.
    - Blade directives are used to customize views based on permissions.
 
-10. **10 Junior Laravel Developer Task Solution**:
+**10 Junior Laravel Developer Task Solution**:
     - Solves a common junior developer task.
     - Includes user verification, CRUD for posts and tags, and caching.
 
