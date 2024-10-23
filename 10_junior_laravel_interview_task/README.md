@@ -42,17 +42,17 @@ This project is a solution to a task typically assigned to a junior Laravel deve
 ## 🎥 Video Overview
 Watch the video tutorial where we build and explain each feature in detail! Coming soon... 🎬
 
-## Task Requirements
+## 📄 Task Requirements
 You can find the Task PDF file here:
 
 [Task_Requirements](task.pdf)
 
-## API Documentation
+## 📝 API Documentation
 You can find the API documentation in the following file:
 
 [API Documentation (Postman JSON)](api-documentation.json)
 
-## 🔧 Database Structure
+## 🛢️ Database Structure
 
 ### Users Table
 - `id` (Primary Key)
@@ -160,9 +160,9 @@ You can find the API documentation in the following file:
  ┗ 📄 api-documentation.json                 # Postman API Documentation
 ```
 
-## 📜 Sample Code
+## 💻 Sample Code
 
-### 🔍 Register & Verification Code Generation
+### Register & Verification Code Generation
 ```php
 // Auth/RegisterRequest.php
 public function rules() {
@@ -218,7 +218,7 @@ public function getStats() {
 }
 ```
 
-### 🗓️ Scheduled Jobs
+### Scheduled Jobs
 - **Job to Delete Old Softly Deleted Posts**:
     ```php
     public function handle() {
