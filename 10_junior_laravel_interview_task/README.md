@@ -42,6 +42,11 @@ This project is a solution to a task typically assigned to a junior Laravel deve
 ## 🎥 Video Overview
 Watch the video tutorial where we build and explain each feature in detail! Coming soon... 🎬
 
+## Task Requirements
+You can find the Task PDF file here:
+
+[Task_Requirements](task.pdf)
+
 ## API Documentation
 You can find the API documentation in the following file:
 
