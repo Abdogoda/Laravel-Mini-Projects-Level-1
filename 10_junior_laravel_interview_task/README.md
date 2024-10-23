@@ -1,4 +1,4 @@
-# Laravel Junior Developer Interview Task Solution
+# 📜 Laravel Junior Developer Interview Task Solution
 
 This project is a solution to a task typically assigned to a junior Laravel developer. It covers the implementation of an authentication system, tags and posts API resources, background jobs for scheduled tasks, and caching for specific statistics. The project uses **Laravel 8+** with **Sanctum** for API authentication, **SQLite** as the database, and implements various concepts suitable for beginner-level Laravel developers.
 
